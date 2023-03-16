@@ -1,2 +1,2 @@
 #!/bin/bash
-$CFILE=$(gcc -S -masm=intel source_file.c)
+gcc -S -masm=intel $CFILE
