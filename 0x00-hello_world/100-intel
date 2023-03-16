@@ -1,3 +1,2 @@
 #!/bin/bash
 gcc -S -masm=intel -O2 source_file.c -o $CFILE
-
