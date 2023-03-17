@@ -1,6 +1,7 @@
 #include <stdio.h>
+
 /**
- * main = Entry point
+ * main - Entry point
  *
  * Description:  the program prints the lowercase alph
  *
@@ -8,9 +9,14 @@
  */
 int main(void)
 {
-int i;
+char c = 'a';
+while (c <= 'z')
+{
+putchar(c);
+c++;
+}
 
-for (i = 97; i <= 122; i++)
-  putchar(i);
+putchar('\n');
+
 return (0);
 }
