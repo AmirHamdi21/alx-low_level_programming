@@ -9,13 +9,10 @@
  */
 int main(void)
 {
-int c = 0;
-while (c < 10)
-{
-printf("%d", c);
-c++;
-}
-printf("\n");
+int i;
+for (i = 0; i < 10; i++)
+putchar(i + '0');
+putchar('\n');
 
-return (0);
+return 0;
 }
