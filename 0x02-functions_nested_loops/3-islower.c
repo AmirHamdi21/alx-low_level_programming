@@ -1,12 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Description:  the program prints _putchar
- *
- * Return: Always 0 (Success)
- */
+*_islower - controls if a character is in lowercase
+*@c: character to be verified
+*Return: return 0 or 1
+*/
 int _islower(int c)
 {
 if (c >= 'a' && c <= 'z')
