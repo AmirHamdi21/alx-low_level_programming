@@ -1,13 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Description:  the program prints _putchar
- *
- * Return: Always 0 (Success)
- */
-void print_alphabet_x10(void)/*Description : print_alphabet_x10*/
+*print_alphabet_x10 - prints alphabet letters
+* ten times
+*desc: The function uses loop to operate
+*Return: no return
+*/
+void print_alphabet_x10(void)
 {
 int c = 'a';
 int i = 0;
