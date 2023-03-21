@@ -6,11 +6,9 @@
  * Description:  the program prints _putchar
  *
  * Return: Always 0 (Success)
+ *
  */
-/**
- * Prints the alphabet in lowercase, followed by a newline.
- */
-void print_alphabet(void) 
+void print_alphabet(void)/*Description: print_alphabet Prints the alphabet in lowercase, followed by a newline */
 {
 int c = 'a';
 for (c = 'a'; c <= 'z'; c++)
