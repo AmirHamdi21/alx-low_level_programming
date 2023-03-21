@@ -23,7 +23,6 @@ _putchar(s / 10 + '0');
 }
 _putchar(s % 10 + '0');
 }
-if (i != 9)
 _putchar('\n');
 }
 return;
