@@ -22,7 +22,7 @@ if (s <= 9)
 {
 _putchar(' ');
 _putchar(' ');
-}   
+}
 else if (s >= 10 && s <= 99)
 {
 _putchar(' ');
