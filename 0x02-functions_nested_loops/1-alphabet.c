@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * main - check the code
  *
  * Description:  the program prints _putchar
  *
@@ -17,8 +17,8 @@ return (0);
 void print_alphabet(void){
 int c = 'a';
 for (c = 'a'; c < 'z'; c++)
-putchar(c);
-putchar('\n');
+_putchar(c);
+_putchar('\n');
 
 return;
 }
