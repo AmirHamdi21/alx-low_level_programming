@@ -7,8 +7,7 @@
  *
  * Return: Always 0 (Success)
  */
-/* Description:  the program prints _putchar */
-void print_alphabet(void)
+void print_alphabet(void)  /* Description:  the program prints _putchar */ 
 {
 int c = 'a';
 for (c = 'a'; c <= 'z'; c++)
