@@ -4,13 +4,13 @@
 * @s: string to print
 */
 
-void print_rev(char *str)
+void print_rev(char *s)
 {
-int l = _strlen(str);
+int l = _strlen(s);
 l = l - 1;
-while (str[l] != '\0')
+while (s[l] != '\0')
 {
-_putchar(str[l]);
+_putchar(s[l]);
 l--;
 }
 _putchar('\n');
