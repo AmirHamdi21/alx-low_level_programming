@@ -4,7 +4,7 @@
 *@str: string
 *Return:void
 */
-void puts2(char *str)
+void puts_half(char *str)
 {
 int l = _strlen(str);
 if (l % 2 == 0)
