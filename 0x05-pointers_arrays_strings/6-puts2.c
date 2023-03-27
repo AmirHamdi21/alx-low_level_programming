@@ -11,9 +11,9 @@ void puts2(char *str)
 {
 while (*str != '\0')
 {
-putchar(*str);
+_putchar(*str);
 str++;
 str++;
 }
-putchar('\n');
+_putchar('\n');
 }
