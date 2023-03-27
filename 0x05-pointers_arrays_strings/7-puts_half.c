@@ -10,7 +10,7 @@ int l = _strlen(str);
 if (l % 2 == 0)
 l = l / 2;
 else
-l = (l - 1) / 2
+l = (l - 1) / 2;
 while (*str != '\0')
 {
 _putchar(str[l]);
