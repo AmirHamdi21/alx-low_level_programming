@@ -5,34 +5,48 @@
  * @n: an exponent
  * Return: returns 10 to power exponent
  */
-void num(int s)
+int base10(int n)
 {
-if (s >= 10 && s < 100)
-_putchar(s / 10 + '0');
-else if (s >= 100 && s < 1000)
-{
-_putchar(s / 100 + '0');
-_putchar((s / 10) % 10 + '0');
-}
-else if (s >= 1000 && s < 10000)
-{
-_putchar(s / 1000 + '0');
-_putchar((s / 100) % 10 + '0');
-_putchar((s / 10) % 10 + '0');
-}
-_putchar(s % 10 + '0');
+	int base = 10;
+
+	while (n > 0)
+	{
+		base *= 10;
+		n--;
+	}
+	return (base);
 }
 
+/**
+ * print_number - prints integers enters as parameters using putchar
+ * @n: integer to print
+ * Return: void
+ */
 void print_number(int n)
 {
-if (n > 0)
-num(n);
-else if (n < 0)
-{
-n = n * -1;
-_putchar('-');
-num(n);
-}
-else
-_putchar(48);
+	int power;
+
+	power = base10(8);
+
+	if (n < 0)
+	{
+		_putchar('-');
+		n *= -1;
+	}
+
+	if (n == 0)
+		_putchar('0');
+
+	else
+	{
+		while (n / power == 0)
+			power /= 10;
+
+		while (power >= 1)
+		{
+			_putchar((n / power) + '0');
+			n %= power;
+			power /= 10;
+		}
+	}
 }
