@@ -12,11 +12,11 @@ num(n);
 else if (n < 0)
 {
 n = n * -1;
-putchar('-');
+_putchar('-');
 num(n);
 }
 else
-putchar(48);
+_putchar(48);
 }
 
 
@@ -24,17 +24,17 @@ putchar(48);
 void num(int s)
 {
 if (s >= 10 && s < 100)
-putchar(s / 10 + '0');
+_putchar(s / 10 + '0');
 else if (s >= 100 && s < 1000)
 {
-putchar(s / 100 + '0');
-putchar((s / 10) % 10 + '0');
+_putchar(s / 100 + '0');
+_putchar((s / 10) % 10 + '0');
 }
 else if (s >= 1000 && s < 10000)
 {
-putchar(s / 1000 + '0');
-putchar((s / 100) % 10 + '0');
-putchar((s / 10) % 10 + '0');
+_putchar(s / 1000 + '0');
+_putchar((s / 100) % 10 + '0');
+_putchar((s / 10) % 10 + '0');
 }
-putchar(s % 10 + '0');
+_putchar(s % 10 + '0');
 }
